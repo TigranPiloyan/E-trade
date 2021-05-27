@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.head_chief{
+    display: flex;
+    height: 50vh;
+}
+.footer_chief{
+    display: flex;
+    height: 50vh;
+}
+.left_head{
+    width: 50%;
+    height: 50vh;
+}
+.right_head{
+    width: 50%;
+    height: 50vh;
+}
+.left_footer{
+    width: 50%;
+    height: 50vh;
+    background-image: url(../logos/etrade.png);
+    background-color: #F8A918;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.right_head{
+    width: 50%;
+    height: 50vh;
+    background-image: url(../logos/etrade.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 576px){
+    .left_footer{
+        background-size:contain;
+        min-height: 100%;
+    }
+}

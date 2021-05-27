@@ -1,0 +1,97 @@
+.parent_column{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+.left_column{
+    width: 50%;
+}
+.right_column{
+    width: 50%;
+}
+.left_top_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.left_bottom_column{
+    height: 50%;
+}
+.right_top_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-image: url(../logos/magazin.jpg);
+    background-size: cover;
+}
+.right_top_column>p{
+    font-size: 30px;
+    color: #4D85BA;
+}
+.right_bottom_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.left_bottom_column>img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.left_top_column>p{
+    width: 80%;
+    font-size: 20px;
+    color:  #65615C;
+}
+.right_bottom_column>p{
+    width: 70%;
+    font-size: 20px;
+    color:  #65615C;
+    margin-top: 25px;
+}
+.right_bottom_column>h1{
+    width: 50%;
+    font-size: 20px;
+    color:  black;
+}
+@media screen and (max-width: 992px){
+  .left_top_column p{
+      font-size: 15px;
+  }
+  .right_bottom_column p{
+    font-size: 15px;
+  }
+  .right_top_column {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 576px){
+    .left_top_column p{
+        font-size: 10px;
+    }
+    .right_bottom_column p{
+      font-size: 10px;
+    }
+    .right_top_column {
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .left_top_column p{
+        font-size: 8px;
+    }
+    .right_bottom_column p{
+      font-size: 8px;
+    }
+    .right_bottom_column h1{
+        font-size: 12px;
+      }
+    .right_top_column {
+        width: 100%;
+    }
+  }

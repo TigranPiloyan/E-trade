@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.parent{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(../logos/etrade.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+}
+.list_cat{
+    width: 100vh;
+}
+.list_cat li{
+    margin-left: 15px;
+}
+.list_pod_cat{
+    width: 100vh;
+}
+.list_pod_cat li{
+    margin-left: 15px;
+}
+.cat1{
+    display: flex;
+    justify-content: flex-start;
+    width: 10vw;
+    border-right: 1px solid #F8A918; 
+}
+.cat{
+    display: flex;
+    justify-content: flex-start;
+    width: 10vw;
+}
+
+
+.cat_item{
+    margin-top: 10px;
+    color: #F8A918;
+    cursor: pointer;
+    border-bottom: 1px solid #F8A918;
+}
+.cat_obj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #0F2D4F;
+}
+.cat_obj>li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    border-bottom: 1px solid #F8A918;
+    color:#F8A918;
+}
+.cat_obj>li img{
+    height: 100%;
+    width: auto;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.cat_obj>li p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17px;
+    height: 50px;
+    color:#F8A918;
+}
+
+.pod_cat_item{
+    margin-top: 10px;
+    color: #F8A918;
+    cursor: pointer;
+    border-bottom: 1px solid #F8A918;
+}
+
+.text{
+    color:#F8A918 ;
+    margin-right: 10px;
+}
+@media screen and (max-width: 576px){
+    .list_cat li{
+        font-size: 13px;
+    }
+    .list_pod_cat li{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 450px){
+    .list_cat li{
+        font-size: 10px;
+    }
+    .list_pod_cat li{
+        font-size: 10px;
+        margin-left: 3px;
+    }
+    .cat_obj li{
+       height: 30px;
+       width: 100%;
+    }
+    .cat_obj p{
+        font-size: 15px;
+    }
+    .cat_obj text{
+        margin-right: 10px;
+    }
+    .cat1 li{
+        margin-left: 5px;
+    }
+    .cat_obj li img{
+        height: 30px;
+        width: 30px;
+     }
+     .icon{
+         height: 30px;
+     }
+     .cat_obj li p{
+        height: 8px;
+        margin-top: 7px;
+        margin-left: 28px;
+     }
+     .list{
+        width: 60vw;
+    }
+    .cat1{
+        width: 20vw;
+    }
+    .cat{   
+        width: 20vw;
+    }
+ 
+}
+@media screen and (max-width: 350px){
+    .list_cat li{
+        font-size: 10px;
+    }
+    .list_pod_cat li{
+        font-size: 8px;
+        margin-left: 3px;
+    }
+    .cat_obj{
+        align-items: flex-start;
+    }
+    .cat_obj li{
+       height: 30px;
+    }
+    .cat_obj p{
+        margin-right: 10px;
+     }
+    .cat_obj li img{
+        height: 30px;
+        width: 30px;
+     }
+     .icon{
+         height: 30px;
+     }
+     .cat_obj li p{
+        height: 10px;
+     }
+     .list{
+        width: 50vw;
+    }
+    .cat1{
+        width: 25vw;
+    }
+    .cat{   
+        width: 25vw;
+    }
+}

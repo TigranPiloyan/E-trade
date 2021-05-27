@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    background-color: #F8A918;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+}
+.logo>img{
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.name>H1>em{
+    color: black;
+    font-size: 50px;
+}
+.name>H1{
+    margin-left: 50px;
+    color: #65615C;
+    font-size: 30px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+.about a{
+    margin: 0 10px;
+}
+.about>i>h2{
+    margin-left: 50px;
+    color: #65615C;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.butlog{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #65615C;
+    border-radius: 25px;
+}
+
+.butlog:hover{
+    background-color:red;
+    transition: 0.5s;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_name{
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.butlogout{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #65615C;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.admin_logo{
+    display: flex;
+}
+.user_img{
+    width: 40px;
+    height: 40px;
+    border-radius:20px
+}
+
+.contact>a{
+    border-bottom: 1px solid #65615C;
+    color: #65615C;
+    font-size: 25px;
+}
+.category>a{
+    border-bottom: 1px solid #65615C;
+    color: #65615C;
+    font-size: 25px;
+}
+.home>a{
+    border-bottom: 1px solid #65615C;
+    color: #65615C;
+    font-size: 25px;
+}
+@media screen and (max-width: 992px){
+    .about>div a{
+        font-size: 18px;
+    }
+    .user_img {
+        width: 30px;
+        height: 30px;
+    }
+    .login_name {
+        font-size: 18px;
+    }
+    .butlogout {
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 576px){
+    .about>div a{
+        font-size: 14px;
+    }
+    .user_img {
+        width: 25px;
+        height: 25px;
+    }
+    .login_name {
+        font-size: 14px;
+    }
+    .butlogout {
+        width: 40px;
+        height: 20px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 450px){
+    header{
+        min-height: 50px;
+        flex-direction: column;
+    }
+    .logo{
+       display: none;
+    }
+    .about h2{
+        font-size:14px ;
+    }
+}
